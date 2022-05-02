@@ -1,12 +1,14 @@
 :root {
   --primary-colour: black;
-  --secondary-colour: #f1f1f1;
+  --secondary-colour: white;
+  --special-colour: #f1f1f1;
   --heading-font-family: "Roboto Mono", monospace;
   --default-font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  line-height: 30px;
 }
 
 h1,
@@ -26,14 +28,14 @@ h1 {
 
 p,
 small {
-  color: var(--heading-font-family);
+  color: var(--primary-colour);
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
 }
 
 .hero {
-  background-color: var(--secondary-colour);
+  background-color: var(--special-colour);
   padding: 200px 0;
   margin-bottom: 40px;
 }
@@ -44,12 +46,20 @@ small {
   max-width: 100px;
 }
 
-.portfolio-tab {
+.portfolio-tab,
+.information-tab {
   padding: 0 40px;
 }
 
 .container {
-  margin: 0 40px;
+  display: block;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.project-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .btn-branding-outline {
@@ -58,4 +68,8 @@ small {
   border-radius: 4px;
   font-size: 18px;
   padding: 15px 30px;
+}
+
+.fa-brands {
+  color: var(--primary-colour);
 }
