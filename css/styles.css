@@ -36,21 +36,22 @@ small {
 
 .hero {
   background-color: var(--special-colour);
-  padding: 50px 30px 100px 30px;
+  padding: 50px 30px 0 30px;
   margin-bottom: 40px;
 }
 
 .hero img {
   display: block;
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 600px;
 }
 
-.weather-app,
-.foraging-website {
+.weather-img,
+.foraging-img {
   display: block;
   margin: 0 auto;
   max-width: 100px;
+  border: black solid 1px;
 }
 
 .portfolio-tab,
@@ -61,7 +62,6 @@ small {
 .container {
   display: block;
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 .project-wrapper {
@@ -71,22 +71,31 @@ small {
 
 .btn-branding-outline {
   color: var(--primary-colour);
+  background-color: var(--special-colour);
   border: 1px solid var(--primary-colour);
   border-radius: 4px;
   font-size: 18px;
   padding: 15px 30px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn-branding-outline:hover {
+  color: var(--primary-colour);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .fa-brands {
   color: var(--primary-colour);
 }
 
-.email-link {
+.email-link,
+.cv-link {
   color: black;
   text-decoration: underline;
 }
 
-.email-link:hover {
+.email-link:hover,
+.cv-link:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
