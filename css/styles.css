@@ -36,17 +36,18 @@ small {
 
 .hero {
   background-color: var(--special-colour);
-  padding: 0 30px 50px 30px;
+  padding: 50px 30px 100px 30px;
   margin-bottom: 40px;
 }
 
 .hero img {
   display: block;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 200px;
 }
 
-.weather-app {
+.weather-app,
+.foraging-website {
   display: block;
   margin: 0 auto;
   max-width: 100px;
