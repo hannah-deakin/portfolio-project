@@ -36,11 +36,17 @@ small {
 
 .hero {
   background-color: var(--special-colour);
-  padding: 200px 0;
+  padding: 0 30px 50px 30px;
   margin-bottom: 40px;
 }
 
 .hero img {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.weather-app {
   display: block;
   margin: 0 auto;
   max-width: 100px;
@@ -72,4 +78,15 @@ small {
 
 .fa-brands {
   color: var(--primary-colour);
+}
+
+.email-link {
+  color: black;
+  text-decoration: underline;
+}
+
+.email-link:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
