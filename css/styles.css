@@ -1,7 +1,6 @@
 :root {
-  --primary-colour: black;
-  --secondary-colour: white;
-  --special-colour: #f1f1f1;
+  --primary-colour: #ff9eea;
+  --secondary-colour: #f1f1f1;
   --heading-font-family: "Roboto Mono", monospace;
   --default-font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,14 +27,18 @@ h1 {
 
 p,
 small {
-  color: var(--primary-colour);
+  color: black;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 .hero {
-  background-color: var(--special-colour);
+  background-color: var(--primary-colour);
   padding: 50px 30px 0 30px;
   margin-bottom: 40px;
 }
@@ -46,15 +49,7 @@ small {
   max-width: 300px;
 }
 
-.weather-img,
-.foraging-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100px;
-}
-
-.portfolio-tab,
-.information-tab {
+.tab {
   padding: 0 40px;
 }
 
@@ -63,39 +58,39 @@ small {
   margin: 0 auto;
 }
 
-.project-wrapper {
+.content-wrapper {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.btn-branding-outline {
-  color: var(--primary-colour);
-  background-color: var(--special-colour);
-  border: 1px solid var(--primary-colour);
+.project-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.btn-branding {
+  color: black;
+  background-color: var(--secondary-colour);
+  border: 1px solid black;
   border-radius: 4px;
   font-size: 18px;
   padding: 15px 30px;
   transition: opacity 0.3s ease-in-out;
 }
 
-.btn-branding-outline:hover {
-  color: var(--primary-colour);
-  background-color: var(--secondary-colour);
+.btn-branding:hover {
+  color: black;
+  background-color: white;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.fa-brands {
-  color: var(--primary-colour);
-}
-
-.email-link,
-.cv-link {
+.link {
   color: black;
   text-decoration: underline;
 }
 
-.email-link:hover,
-.cv-link:hover {
+.link:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
