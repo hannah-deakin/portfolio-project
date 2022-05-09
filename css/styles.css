@@ -98,6 +98,15 @@ h1 {
   cursor: pointer;
 }
 
+.link-2 {
+  color: var(--primary-colour);
+}
+
+.link-2:hover {
+  color: var(--primary-colour);
+  text-decoration: underline;
+}
+
 @media (max-width: 992px) {
   .btn-branding {
     display: block;
